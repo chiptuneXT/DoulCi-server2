@@ -1,0 +1,248 @@
+/**
+ * Reset
+ */
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/**
+ * Base
+ */
+body {
+    color: rgb(49,49,49);
+    font-family: "Helvetica Neue", "Segoe UI", "Tahoma";
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff;
+    font-weight: 300;
+    line-height: 1.3em;
+    background-color: #eaeaea;
+    padding: 40px 0;
+   overflow-x: hidden;
+}
+
+button {
+    font: 16px "Helvetica Neue", "Segoe UI";
+    cursor: pointer;
+}
+
+a {
+    color: rgb(56,108,170);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/**
+ * Page Implementation UI
+ */
+.page {
+    max-width: 1160px;
+    min-width: 842px;
+    margin: 0 auto;
+    min-height: 620px;
+    position: relative;
+}
+
+section {
+    padding: 0 58px;
+}
+
+.content {
+    width: 580px;
+    position: relative;	
+}
+
+.headline {
+    margin-bottom: 32px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 16px;
+    min-height: 144px;
+}
+
+.title-text {
+    position: absolute;
+    bottom: 0; left: 0;
+}
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 600px;
+}
+
+
+/**
+ * Typography UI
+ */
+.title-text {
+    font-size: 48px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: rgb(128,128,128);
+    font-weight: 400;
+}
+
+.forgot {
+    font-size: 11px;
+    float: right;
+}
+
+.activationhelp {
+    font-size: 11px;
+    float: left;
+}
+
+.form-error {
+    color: #CE514C;
+}
+
+
+/**
+ * UI Elements
+ */
+.sectioned-content {
+    background: -webkit-radial-gradient(center top, farthest-corner, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0) 70%) no-repeat,
+                -webkit-radial-gradient(center bottom, farthest-corner, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0) 70%) no-repeat;
+    background-size: 100% 6px;
+    background-position: top left, bottom left;
+    /*background-repeat: no-repeat;*/
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    padding: 30px 58px;
+    margin-bottom: 30px;
+}
+
+
+/**
+ * Buttons 
+ */
+.btn-continue {
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+    line-height: 1em;
+    border: 1px solid #31567C;
+    background: -webkit-linear-gradient(#5EA0EB, #416BD4);
+    padding: 7px 16px 8px;
+    border-radius: 5px;
+}
+
+.btn-continue:active {
+    background-image: -webkit-linear-gradient(#416BD4, #5EA0EB);
+}
+
+.btn-alt {
+
+}
+
+
+/**
+ * Form UI
+ */
+form {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+form label {
+    display: inline-block;
+
+}
+
+form input {
+    display: block;
+    padding: 1px 3px;
+    font-size: 13px;
+    width: 195px;
+}
+
+/***** Modification BEGIN ***************/
+.btn-continue.disabled {
+	background: gray;
+	color: lightgray;
+	border: 1px solid #150517;
+}
+
+.spinner {
+	position: relative;
+	top: -23px;
+	left: 110px;
+	height: 16px;
+	width: 16px;
+	background: url("spinner_Reload_16px.png");
+	background-size: 28px 270px;
+	background-position: -6px -6px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+  .spinner {
+  	background: url("spinner_Reload_16px@2x.png");
+	}
+}
+.spinner.pos0 {
+	background-position: -6px -6px;
+}
+.spinner.pos1 {
+	background-position: -6px -28px;
+}
+.spinner.pos2 {
+	background-position: -6px -50px;
+}
+.spinner.pos3 {
+	background-position: -6px -72px;
+}
+.spinner.pos4 {
+	background-position: -6px -94px;
+}
+.spinner.pos5 {
+	background-position: -6px -116px;
+}
+.spinner.pos6 {
+	background-position: -6px -138px;
+}
+.spinner.pos7 {
+	background-position: -6px -160px;
+}
+.spinner.pos8 {
+	background-position: -6px -182px;
+}
+.spinner.pos9 {
+	background-position: -6px -204px;
+}
+.spinner.pos10 {
+	background-position: -6px -226px;
+}
+.spinner.pos11 {
+	background-position: -6px -248px;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+.message-title {
+  color: rgb(128,128,128);
+  font-weight: bold;
+}
+.message-text {
+    color: rgb(128,128,128);
+    font-weight: 400;
+}
+
+.message-text td:first-child {	
+    padding-right: 10px;
+	text-decoration: underline;
+	text-align: right;
+}
+
+/***** Modification END ***************/

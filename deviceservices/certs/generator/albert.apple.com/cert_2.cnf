@@ -1,0 +1,37 @@
+[req]
+#serial=112a006d37e5106fd6ca7cc3efbacc18
+default_md=sha1
+default_bits=2048
+distinguished_name=req_dn
+extensions=v3_req
+prompt=no
+
+[req_dn]
+C=US
+O=VeriSign, Inc.
+1.OU=VeriSign Trust Network
+0.OU=Terms of use at https://www.verisign.com/rpa (c)06
+CN=VeriSign Class 3 Extended Validation SSL SGC CA
+
+[v3_req]
+subjectKeyIdentifier=4e43c81d76ef37537a4ff2586f94f338e2d5bddf
+# ?????????????? All issuance policies
+certificatePolicies=@polsect
+crlDistributionPoints = URI:http://EVSecure-crl.verisign.com/pca3-g5.crl
+extendedKeyUsage=RID:2.16.840.1.113730.4.1,RID:2.16.840.1.113733.1.8.1
+nsCertType=sslCA,emailCA
+#issuerLogo= DER:05
+#FORMAT:HEX,305fa15da05b3059305730551609696d6167652f6769663021301f300706052b0e03021a04148fe5d31a86ac8d8e6bc3cf806ad448182c7b192e30251623687474703a2f2f6c6f676f2e766572697369676e2e636f6d2f76736c6f676f2e676966
+subjectAltName=dirName:dir_sect
+authorityInfoAccess = OCSP;URI:http://EVSecure-ocsp.verisign.com
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=critical,CA:TRUE
+keyUsage=critical,keyCertSign,cRLSign
+
+[polsect]
+policyIdentifier=2.16.840.1.113733.1.7.23.6
+#STRING:All issuance policies
+CPS.1=https://www.verisign.com/cps
+
+[dir_sect]
+CN=Class3CA2048-1-48

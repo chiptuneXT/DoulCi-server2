@@ -1,0 +1,28 @@
+[req]
+serial=18dad19e267de8bb4a2158cdcc6b3b4a
+default_md=sha1
+default_bits=2048
+distinguished_name=req_dn
+extensions=v3_req
+prompt=no
+
+[req_dn]
+C=US
+O=VeriSign, Inc.
+1.OU=VeriSign Trust Network
+0.OU=(c) 2006 VeriSign, Inc. - For authorized use only
+CN=VeriSign Class 3 Public Primary Certification Authority - G5
+
+[v3_req]
+#issuerLogo=FORMAT:HEX,305fa15da05b3059305730551609696d6167652f6769663021301f300706052b0e03021a04148fe5d31a86ac8d8e6bc3cf806ad448182c7b192e30251623687474703a2f2f6c6f676f2e766572697369676e2e636f6d2f76736c6f676f2e676966
+subjectKeyIdentifier=7fd365a7c2ddecbbf03009f34339fa02af333133
+basicConstraints=critical,CA:TRUE
+keyUsage=critical,keyCertSign,cRLSign
+#friendyName=VeriSign
+extendedKeyUsage=serverAuth,clientAuth,emailProtection,codeSigning
+certificatePolicies=ia5org,@polsect
+
+[polsect]
+policyIdentifier=2.16.840.1.113733.1.7.23.6
+#policyQualifiers="Root Program Flags"
+CPS.1=c0

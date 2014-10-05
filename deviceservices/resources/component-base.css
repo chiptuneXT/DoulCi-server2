@@ -1,0 +1,174 @@
+/* --------------------------------------------------------------------------------------
+ *   Resets for iTunes.
+ * --------------------------------------------------------------------------------------
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, input, textarea, button {
+	font-size: 13px;
+	font-family: Lucida Grande, sans-serif;
+}
+
+select:focus {
+	outline: 0 transparent;
+}
+
+textarea {
+	resize: none;
+}
+
+textarea:focus {
+	outline: 0 transparent;
+}
+
+input[type=text] {
+	height: 22px;
+}
+
+input[type=password] {
+    height: 22px;
+}
+
+/* --------------------------------------------------------------------------------------
+ *   IPAJingleButton
+ * --------------------------------------------------------------------------------------
+ */
+
+input[type=submit] {
+	width: 90px;
+	height: 22px;
+	border: 1px solid #999;
+	background: #eee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bebebe));
+	-webkit-border-radius: 11px;
+}
+
+input[type=submit]:active {
+	width: 90px;
+	height: 22px;
+	border: 1px solid #999;
+	background: #eee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#bebebe));
+	-webkit-border-radius: 11px;
+}
+
+a.IPAJingleButton {
+	color: black;
+	text-decoration: none;
+    width: 90px;
+    height: 22px;
+    border: 1px solid #999;
+    padding-top: 2px; 
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bebebe));
+    -webkit-border-radius: 11px;
+}
+
+a.IPAJingleButton:active {
+    width: 90px;
+    height: 22px;
+    border: 1px solid #999;
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#bebebe));
+    -webkit-border-radius: 11px;
+}
+
+/* --------------------------------------------------------------------------------------
+ *   IPAJinglePopUpButton
+ * --------------------------------------------------------------------------------------
+ */
+
+div.IPAJinglePopUpButton {
+	display: inline;
+	position: relative;
+}
+
+div.IPAJinglePopUpButton select {
+	-webkit-appearance: none;
+	border: 1px solid #999;
+	-webkit-border-radius: 4px;
+	padding: 0px 20px 0px 6px;
+	-webkit-background-clip: padding;
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#bebebe));
+	font-size: 13px;
+	margin-left: 5px;
+	height: 22px;
+}
+
+div.IPAJinglePopUpButton select:focus {
+	outline: 0 transparent;
+}
+
+div.IPAJinglePopUpButton:after {
+	-webkit-mask-box-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAALCAYAAAC3ZUeVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEBJREFUeNpiYEAAbQY0oAPEv4BYF1nwKxD/A+JvMIFFQPwfCS9koBxsRDNzE0iQC02QG6baGCpgjG6MCYwBEGAAyZQRs/VQgSIAAAAASUVORK5CYII=);
+	content: "";
+	position: absolute;
+	height: 11px;
+	width: 5px;
+	right: 8px;
+	top: 3px;
+	pointer-events: none;
+	background-color: #000;
+}
+
+/* --------------------------------------------------------------------------------------
+ *   IPAJingleCheckBox
+ * --------------------------------------------------------------------------------------
+ */
+
+input[type=checkbox] {
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+	position: relative;
+	top: 1px;
+	background: url('btn_checkbox.png') no-repeat 0px 0px;
+}
+
+input[type=checkbox]:active {
+	background: url('btn_checkbox.png') no-repeat -14px 0px;
+}
+
+input[type=checkbox]:checked {
+	background: url('btn_checkboxChecked.png') no-repeat 0px 0px;
+}
+
+input[type=checkbox]:checked:active {
+	background: url('btn_checkboxChecked.png') no-repeat -14px 0px;
+}
+
+/* --------------------------------------------------------------------------------------
+ *   IPAJingleRadioButton
+ * --------------------------------------------------------------------------------------
+ */
+
+input[type=radio] {
+	-webkit-appearance: none;
+	width: 14px;
+	height: 15px;
+	background: url('btn_radio_unselected.png') no-repeat 0px 0px;
+}
+
+input[type=radio]:active {
+	background: url('btn_radio_unselected.png') no-repeat -14px 0px;
+}
+
+input[type=radio]:checked {
+	background: url('btn_radio_selected.png') no-repeat 0px 0px;
+}
+
+input[type=radio]:checked:active {
+	background: url('btn_radio_selected.png') no-repeat -14px 0px;
+}
+
+/* --------------------------------------------------------------------------------------
+ *   End.
+ * --------------------------------------------------------------------------------------
+ */

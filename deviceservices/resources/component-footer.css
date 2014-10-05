@@ -1,0 +1,16 @@
+#debug {
+    font-family: Geneva,Helvetica,Arial,sans-serif;
+    font-size: 9px; 
+}
+
+#legal {
+	text-align: center;
+	font-family: Geneva,Helvetica,Arial,sans-serif;
+	font-size: 9px;
+}
+
+#legal a {
+	font-family: inherit;
+	font-size: inherit;
+	color: black;
+}

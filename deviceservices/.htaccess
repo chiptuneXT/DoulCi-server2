@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^deviceActivation$ deviceActivation.php
+RewriteRule ^showSettings$ showSettings.php

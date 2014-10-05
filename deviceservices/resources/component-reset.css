@@ -1,0 +1,18 @@
+/* =GENERIC RESET STYLES
+-------------------------------------------------------*/
+body { margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, a, em, cite, table, tr, td, th, label, fieldset, legend, button {
+	padding:0; margin:0; list-style: none; text-decoration: none; font-style:normal; font-weight: normal; border:none;
+}
+header, section, footer { display:block; }
+a { color:#0085cf; }
+a img, :link img, :visited img { border: 0; }
+a:hover { text-decoration: underline; }
+i, em { font-style: italic; }
+b, strong {	font-weight: bold; }
+strike { text-decoration: line-through; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

@@ -1,0 +1,20 @@
+[req]
+serial=02
+default_md=sha1
+default_bits=1024
+distinguished_name=req_dn
+extensions=v3_req
+prompt=no
+
+[req_dn]
+C=US
+O=Apple Inc.
+OU=Apple iPhone
+CN=Apple iPhone Activation
+
+[v3_req]
+subjectKeyIdentifier=a1a0d2feb7b473fe9b146aafcd3d734f1fefd694
+authorityKeyIdentifier=keyid:always
+crlDistributionPoints=URI:http://www.apple.com/appleca/iphone.crl
+keyUsage=critical,digitalSignature
+basicConstraints=critical,CA:FALSE

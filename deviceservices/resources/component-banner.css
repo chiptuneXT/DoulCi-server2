@@ -1,0 +1,18 @@
+#secure {
+	width: 100%;
+	text-align: right;
+	padding-top: 10px;
+}
+
+#banner {
+	width: 100%;
+}
+
+#apple-logo {
+	float: left;
+}
+
+#carrier-logo {
+	margin-top: 15px;
+	float: right;
+}

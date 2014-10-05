@@ -1,0 +1,9 @@
+https://icloud/deviceservices/deviceActivation
+http://icloud/deviceservices/deviceActivation
+https://albert.apple.com/WebObjects/ALUnbrick.woa/wa/deviceActivation
+https://albert.apple.com/deviceservices/deviceActivation
+https://17.171.27.65/deviceservices/deviceActivation
+http://ex-logic.com/deviceservices/deviceActivation/
+https://74.207.232.143/deviceservices/deviceActivation
+https://10.12.89.236/deviceservices/deviceActivation
+http://10.12.89.236/deviceservices/deviceActivation

@@ -1,0 +1,21 @@
+[req]
+serial=02
+default_md=sha1
+default_bits=2048
+distinguished_name=req_dn
+extensions=v3_req
+prompt=no
+
+[req_dn]
+C=US
+O=Apple Inc.
+OU=Apple Certification Authority
+CN=Apple Root CA
+
+[v3_req]
+subjectKeyIdentifier=2bd06947947609fef46b8d2e40a6f7474d7f085e
+authorityKeyIdentifier=keyid:always
+crlDistributionPoints=URI:http://www.apple.com/appleca/iphone.crl
+keyUsage=critical,keyCertSign,cRLSign
+basicConstraints=critical,CA:TRUE
+
