@@ -7,7 +7,7 @@ $activation= (array_key_exists('activation-info-base64', $_POST)
 			  : array_key_exists('activation-info', $_POST) ? $_POST['activation-info'] : '');
 $guid = array_key_exists('guid', $_POST) ? $_POST["guid"] : '-';
 
-if(!isset($activation) || empty($activation)) { exit('Activation info not found!'); }
+if(!isset($activation) || empty($activation)) { exit('Only for iTunes access'); }
 
 // load and decode activation info
 $encodedrequest = new DOMDocument;
@@ -166,7 +166,7 @@ echo
 <div class="page">
 	<div class="content">
 	<!-- Server problems fixed by @ChiptuneXT, 2014 year -->
-		<section class="headline"><h1 class="title"><span class="title-text">Activation done! Activation Info:</span></h1></section>
+		<section class="headline"><h1 class="title"><span class="title-text">Demo activation is done! Activation Info:</span></h1></section>
 		<section class="message">
 			<label class="message-title">'.$productNames[$productType].' details</label>
 			<table class="message-text">
